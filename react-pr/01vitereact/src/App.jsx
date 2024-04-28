@@ -1,11 +1,11 @@
-import Index from "./index"
+import One from "./one"
 
 
 function App() {
 
   return (
     <>
-      <Index />
+      <One />
       <h1>Hi! how are you? </h1>
     </>
   )
