@@ -1,8 +1,13 @@
+import Index from "./index"
+
 
 function App() {
 
   return (
-    <h1>react with vite</h1>
+    <>
+      <Index />
+      <h1>Hi! how are you? </h1>
+    </>
   )
 }
 
