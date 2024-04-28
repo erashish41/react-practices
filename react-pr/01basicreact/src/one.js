@@ -1,9 +1,8 @@
-import React from 'react'
+function One () {
 
-const one = () => {
   return (
     <h3>Hello ki hal chal</h3>
   )
 }
 
-export default one
+export default One
