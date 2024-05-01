@@ -19,4 +19,4 @@ const reactElement = {
 
 const mainContainer = document.querySelector("#root")
 
-customRender(reactElement, mainContainer)
+customRender(reactElement, mainContainer)   //reactElement means kya inject kru, mainContainer is kaha pr kru
