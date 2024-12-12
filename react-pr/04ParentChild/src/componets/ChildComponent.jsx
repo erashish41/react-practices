@@ -1,28 +1,26 @@
-// // Parent to Child passing data
+// // // data from P to C
 // import React from 'react'
 
-// const ChildComponent = ({parentToChild}) => {
+// const ChildComponent = ({handleClickParent}) => {
 //   return (
-//     <div>
-//         <div>Child Component</div>
-//         <div>{parentToChild}</div>
-//     </div>
-    
-//   )
+//         <div>
+//             <div>ChildComponent</div>
+//             <div>
+//                 {handleClickParent}
+//             </div>
+//         </div>  )
 // }
 
 // export default ChildComponent
 
-// Child to Parent passing data
+
+
+// data from C to P 
 import React from 'react'
 
-const ChildComponent = (props) => {
-    const data = "Data from Child to Parent"
+const ChildComponent = () => {
   return (
-    <div>
-            <div>ChildComponent</div>
-          <button onClick={() =>props.handleProcess(2000)}>Click to Child</button>  
-    </div>
+    <div>ChildComponent</div>
   )
 }
 

@@ -1,22 +1,31 @@
-// // Parent to Child passing data
-import React, { useState } from 'react'
-import ChildComponent from './ChildComponent'
+// // data from P to C
+// import React, { useState } from 'react'
+// import ChildComponent from './ChildComponent'
 
 // const ParentComponent = () => {
-    
-//     const [data, setData] = useState('');
 
-//     const parentToChild = () => {
-//         setData("data from Parent to Child");
+//     const [info, setInfo] = useState("")
+
+//     const data = "data from P to C";
+
+//     const handleClickParent = () => {
+//         setInfo(data)
+//         // console.log(data);
+        
 //     }
 
 //   return (
 //     <div>
-//         <ChildComponent parentToChild={data}/>
-
-//         <div>
-//             <button onClick={() => parentToChild()}>Click on Parent</button>
-//         </div>
+//             <div>ParentComponent</div>
+//             <div>
+//                 {
+//                     info ? <h2>info is here</h2> : <h2>no info</h2>
+//                 }
+//             </div>
+//             <ChildComponent handleClickParent={info}/>
+//             <div>
+//                 <button onClick={() => handleClickParent()}> Click to Parent</button>
+//             </div>
 //     </div>
 //   )
 // }
@@ -25,29 +34,12 @@ import ChildComponent from './ChildComponent'
 
 
 
-// Child to Parent passing data
-const ParentComponent = () => {    
+// data from C to P 
+import React from 'react'
 
-    const [info, setInfo] = useState('')
-  
-    const process = (data) => {
-        setInfo(data)
-        console.log(`hello data is: ${data}`);
-        
-    }
-
+const ParentComponent = () => {
   return (
-    <div>
-            <div>ParentComponent</div>
-            <div>
-                {
-                    info ? <h2>data from child is {info}</h2> : <h2>no data is shown</h2>
-                }
-            </div>
-            <div>
-                <ChildComponent handleProcess={process}/>
-            </div>
-    </div>
+    <div>ParentComponent</div>
   )
 }
 
