@@ -1,27 +1,21 @@
-// // // data from P to C
-// import React from 'react'
-
-// const ChildComponent = ({handleClickParent}) => {
-//   return (
-//         <div>
-//             <div>ChildComponent</div>
-//             <div>
-//                 {handleClickParent}
-//             </div>
-//         </div>  )
-// }
-
-// export default ChildComponent
-
-
-
-// data from C to P 
+// // data from P to C
 import React from 'react'
 
-const ChildComponent = () => {
+const ChildComponent = ({dataPass}) => {
   return (
-    <div>ChildComponent</div>
+    <div>
+        <div>Child Component</div>
+        <div>
+            {
+                dataPass ? <h2>Data is passed from Parent: {dataPass}</h2> : <h2>No data passed from Parent</h2>
+            }
+        </div>
+    </div>
   )
 }
 
 export default ChildComponent
+
+
+
+// // data from C to P 
