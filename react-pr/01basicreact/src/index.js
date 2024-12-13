@@ -1,5 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from 'react';                // react is core foundational library which takes all references 
+import ReactDOM from 'react-dom/client';  // react-dom is implimentation in web
 
 import App from './App';
 
