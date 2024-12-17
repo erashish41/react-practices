@@ -2,6 +2,7 @@ import React from 'react'
 import DispalyList from './DispalyList'
 import SelectItemToDisplay from './SelectItemToDisplay'
 import DeleteItemFromArray from './DeleteItemFromArray'
+import AddItemInArray from './AddItemInArray'
 
 const ParentOfArray = () => {
   return (
@@ -9,7 +10,8 @@ const ParentOfArray = () => {
         <h3>Parent Of Arrays</h3>
         {/* <DispalyList /> */}
         {/* <SelectItemToDisplay /> */}
-        <DeleteItemFromArray />
+        {/* <DeleteItemFromArray /> */}
+        <AddItemInArray />
     </div>
   )
 }
