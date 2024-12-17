@@ -10,7 +10,6 @@ const DispalyList = () => {
         { id: 'b', value: 'orange' },
     ];
 
-    const [list, setList] = useState(null)
       
   return (
     <div>
