@@ -31,8 +31,8 @@ const ExtraOne = () => {
                             style={{cursor: 'pointer'}}>
                                 {items}
                             </li>
-                    )
-                })
+                          )
+                  } )
             }
         </ul>
         <ExtraTwo passInfo={fruits}/>
