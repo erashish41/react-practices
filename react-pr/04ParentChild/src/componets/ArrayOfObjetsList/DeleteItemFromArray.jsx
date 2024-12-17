@@ -24,7 +24,7 @@ const DeleteItemFromArray = () => {
         <div>Delete Item From Array</div>
         <ul>
             {
-                initialList.map((item) => {
+                fruit.map((item) => {
                     return (
                         <li 
                             key={item.id}
