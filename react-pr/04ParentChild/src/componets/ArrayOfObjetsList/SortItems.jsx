@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const SortItems = () => {
 
@@ -10,13 +10,29 @@ const SortItems = () => {
         { id: 'b', value: 'orange' },
     ];
 
+    const [fruit, setFruit] = useState(myList)
+
+    const handleOnClick = () => {
+        const sortedList = [...fruit].sort((a,b) => {
+            // console.log("a starts",a.value, "b starts",b.value);
+            return a.value.localeCompare(b.value)
+        })
+        setFruit(sortedList)
+        console.log("final output", sortedList);
+        
+    }
+
   return (
     <div>
         <div>Sorting Items</div>
-        <button>Sort Fruits</button>
+        <button onClick={handleOnClick}>Sort Fruits</button>
         <ul>
             {
-
+                fruit.map((elm) => (
+                    <li key={elm.id}>
+                        {elm.value}
+                    </li>
+                ))
             }
         </ul>
     </div>
