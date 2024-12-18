@@ -3,6 +3,7 @@ import DispalyList from './DispalyList'
 import SelectItemToDisplay from './SelectItemToDisplay'
 import DeleteItemFromArray from './DeleteItemFromArray'
 import AddItemInArray from './AddItemInArray'
+import SortItems from './SortItems'
 
 const ParentOfArray = () => {
   return (
@@ -11,7 +12,8 @@ const ParentOfArray = () => {
         {/* <DispalyList /> */}
         {/* <SelectItemToDisplay /> */}
         {/* <DeleteItemFromArray /> */}
-        <AddItemInArray />
+        {/* <AddItemInArray /> */}
+        <SortItems />
     </div>
   )
 }
