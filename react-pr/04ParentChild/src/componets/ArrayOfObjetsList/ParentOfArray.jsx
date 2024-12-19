@@ -5,6 +5,7 @@ import DeleteItemFromArray from './DeleteItemFromArray'
 import AddItemInArray from './AddItemInArray'
 import SortItems from './SortItems'
 import FilterItems from './FilterItems'
+import FilterByAlphabat from './FilterByAlphabat'
 
 const ParentOfArray = () => {
   return (
@@ -15,7 +16,8 @@ const ParentOfArray = () => {
         {/* <DeleteItemFromArray /> */}
         {/* <AddItemInArray /> */}
         {/* <SortItems /> */}
-        <FilterItems />
+        {/* <FilterItems /> */}
+        <FilterByAlphabat />
     </div>
   )
 }
