@@ -7,7 +7,7 @@ import SortItems from './SortItems'
 import FilterItems from './FilterItems'
 import FilterByAlphabat from './FilterByAlphabat'
 import FruitCount from './FruitCount'
-import FavroiteFruit from './FavroiteFruit'
+import FavoriteFruit from './FavoriteFruit'
 
 const ParentOfArray = () => {
   return (
@@ -21,7 +21,7 @@ const ParentOfArray = () => {
         {/* <FilterItems /> */}
         {/* <FilterByAlphabat /> */}
         {/* <FruitCount /> */}
-        <FavroiteFruit />
+        <FavoriteFruit />
     </div>
   )
 }
