@@ -26,6 +26,11 @@ const FavoriteFruit = () => {
         }
     }
 
+    function handleClearFavorite(){
+        setFruit([]);
+        
+    }
+
 
   return (
     <div>
@@ -47,6 +52,7 @@ const FavoriteFruit = () => {
                 })
             }
         </ul>
+        <button onClick={handleClearFavorite}>Clear Favorite</button>
         <p>Favorite fruit: {fruit.join(", ")}</p>
         <p>Total Favorite fruit: {fruit.length}</p>
     </div>
